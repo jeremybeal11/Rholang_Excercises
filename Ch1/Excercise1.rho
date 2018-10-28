@@ -1,0 +1,12 @@
+/*
+    Theirs several issues with this, can you find the mistake(s),correct them, and replace the 
+    text to say: "You RHOC!"
+*/
+
+new print(`rho:io:stdout`) in {
+
+    Print!|("im lost!")
+
+
+}
+
