@@ -1,0 +1,6 @@
+new print(`rho:io:stdout`) in {
+
+    print!("You RHOC!")
+
+
+}
