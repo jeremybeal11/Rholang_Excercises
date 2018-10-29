@@ -1,9 +1,6 @@
-// 
-/* Create two channels with one name being: "Player1" and the other being "Player2"
-and have them tell eachother that they are ready.
-*/
-
 //Solution
+
+
 new player1, print(`rho:io:stdout`) in {
     player1!("ok im ready, player2")
 }
