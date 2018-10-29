@@ -1,0 +1,5 @@
+// 
+/* Create two channels: one named "Player1" and the other being "Player2"
+   Player1 will send out a message saying: "ok im ready, player2", and Player2
+   will send out a message saying: "ok im ready, player1"
+*/
