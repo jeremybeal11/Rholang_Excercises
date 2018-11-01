@@ -1,0 +1,15 @@
+/*
+    you have entered a contest to win $1000, but you need
+    to be present and listen out for the phone in case you win. 
+    
+    finish the program to allow your phone to listen for incoming 
+    messages.
+*/
+
+new print(`rho:io:stdout`) in {
+    
+    
+    
+    |
+    @"phonecall"!("Hey you won a $1,000! Congrats!")
+}

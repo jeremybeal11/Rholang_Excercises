@@ -1,0 +1,12 @@
+new print(`rho:io:stdout`) in {
+    contract @"bank"(deposit) = {
+        if (*deposit > 0){
+            print!("you can deposit your cash here")
+        }
+        else{
+            print!("not enough to deposit...")
+        }
+    }
+    |
+    @"bank"!(-30)
+}

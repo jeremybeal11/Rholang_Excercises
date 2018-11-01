@@ -1,0 +1,13 @@
+/*
+    any news or changes the board makes has a chain of command on how 
+    the news is delivered. typically the principal is the first to hear
+    it, then tells the vice principal, and after the VP listens, its is their
+    job to tell the teachers. 
+    
+    excercise:
+    write a program of the board announcing: "teachers must buy their own materials" 
+    on a cannel called "board" 
+    
+    then the news is heard then passed down in this order: Principal>VP>teacher and the 
+    teacher reponds back with: "We are going to protest!"
+*/

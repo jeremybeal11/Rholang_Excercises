@@ -1,0 +1,29 @@
+/*
+    teachers are tipically the last ones to hear any new policy changes
+    the board has issued out. write out a program where the principal hears 
+    the news, then tellsthe vice principal, the vice principal hears it,
+    then tells the teacher. 
+*/
+
+new print(`rho:io:stdout`) in {
+    
+    //principal hears the news from the board first then tells the 
+    //vice principal 
+    for(msg <- @"board") {
+        @"principal"!(*msg) |
+        // then vice principal hears the news from the principal
+        // then tells the teacher. 
+        for(msg <- @"principal") {
+            @"VP"!(*msg) |
+            // the teachers hears the news and replies back:
+            // "We are going to protest!"
+            for(teacher <- @"VP") {
+                print!("We are going to protest!")
+            }
+        }
+    }    
+    
+    |
+    
+    @"board"!("teachers must buy their own materials")
+}

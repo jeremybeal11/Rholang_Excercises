@@ -1,0 +1,12 @@
+/*
+    create a contract named "bank" that takes a deposit 
+    amount and then prints out the news balance.
+*/
+new print(`rho:io:stdout`) in {
+    contract @"bank"(deposit) = {
+        print!("your new balance is", *deposit + 10)
+       
+    }
+    |
+    @"bank"!(30)
+}

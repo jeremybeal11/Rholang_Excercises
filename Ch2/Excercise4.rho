@@ -1,0 +1,4 @@
+/*
+    create a contract named "bank" that takes a deposit 
+    amount and then prints out the new balance.
+*/

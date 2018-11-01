@@ -1,0 +1,19 @@
+/*
+    you have entered a contest to win $1000, but you need
+    to be present and listen out for the phone in case you win.
+    as you are waiting, a telemarketer called wanting to cell you
+    phone books.
+    
+    excercise:
+    edit the program to allow you phone to keep listening for 
+    incoming calls while you're on the phone.  
+*/
+
+new print(`rho:io:stdout`) in {
+    
+    
+    @"phonecall"!("im calling to talk to you about newspapers blah blah blah")
+    @"phonecall"!("Hey you won a $1,000! Congrats!")
+
+    
+}
