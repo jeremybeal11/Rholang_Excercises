@@ -1,0 +1,11 @@
+new p1, p2, signal in {
+  // P1 sends their message then signals P2 who is waiting
+  p1!("Send any message")
+  |
+  signal!("Go ahead, I'm done.")
+  |
+  // When P2 receives the signal, they send their message
+  for (_ <- signal){
+    p2!("Hope I win")
+  }
+}

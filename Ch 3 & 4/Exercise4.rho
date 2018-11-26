@@ -1,0 +1,16 @@
+// experiment time!
+// exercise 2 is one way of listening to things on a cannel
+// at once. how would we listen in to multiple messages on different 
+// channels?
+
+new show_num, print(`rho:io:stdout`) in {
+    
+    for(x <- @"show_num1") {
+        print!([*x,*y,*z])
+     
+    } |
+    @"show_num"!(11) |
+    @"show_num"!(8)  |
+    @"show_num"!(3)
+    
+}

@@ -1,0 +1,41 @@
+/*
+    we are going to take the
+*/
+
+
+
+new ast1, ast2, print(`rho:io:stdout`) in {
+    for (x <- @"ast1"; y <- @"ast2") {
+
+         match [*x, *y] {
+           ["go", "go"] => {print!("Clear for launch")}
+           ["stop", "stop"] =>{print!("NONNONO")}
+           // ... more cases here
+           _ => {//Default case}
+         }
+         /*
+        if (*x == "stop" and *y == "stop") {
+            print!("whoa whoa whoa abort launch")
+        }
+        else{
+            if (*x =="go" and *y == "stop") {
+                print!("x said launch")
+            }
+            else {
+              if (*x =="stop" and *y == "go"){
+                print!("y said launch")
+              }
+              else {
+                print!("we are clear for launch")
+              }
+            }
+        }
+    */
+    }
+    |
+    @"ast1"!("go")
+    |
+    @"ast2"!("typo")
+  }
+
+}

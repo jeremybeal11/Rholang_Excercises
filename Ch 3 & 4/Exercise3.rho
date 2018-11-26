@@ -1,0 +1,24 @@
+/*
+    you recieved an email at work, and without paying attention, you
+    have opened it and read it. The email was for the president in regards
+    to potenital investors and needs a reply ASAP!
+    
+    exercise: create a new channel called "email" and another one called
+    "print".  
+*/
+
+    new email, print(`rho:io:stdout`) in {
+        
+        // you recieve the message in your inbox which you open 
+        
+            
+        // you realize its not for  you, and put the email message back 
+        //on the channel with a message that it went to the wrong person
+        
+      
+        //you then send the email to whomever sent it
+       
+        
+        // investor send a email into your inbox
+        
+    }

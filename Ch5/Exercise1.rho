@@ -1,0 +1,23 @@
+/*
+    this excercise may look familiar, because we have actually seen this 
+    before in chapter 5 of the tutorial. 
+    
+    Exercise: 
+        as you can see this program is missing a lot of code. in order 
+        for this program to run the way it should, do the following:
+        1) make sure the program listens to the message sent on both "ast1"
+        channel and "ast2". 
+        2) print: "whoa whoa whoa abort launch"
+        3) fix any errors that you see in the current program
+*/
+
+new ast1, ast2, print(`rho:io:stdout`) in {
+    for (x <= @"ast1") {
+        
+        stdout!("did you say launch? ok initiating sequence!")
+    }
+    |
+    @"ast"!("STOP")
+    |
+    @"ast2"!("STOP")
+}

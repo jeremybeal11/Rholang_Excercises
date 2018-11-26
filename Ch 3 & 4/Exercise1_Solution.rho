@@ -1,0 +1,17 @@
+/*
+    you are stuck on an island and all you have is your magical
+    rhoRadio. you need to send out constant message on a SOS channel incase
+    someone close by and can recieve your message which is your location:
+        Lat: 9.557417184917647 
+        Long: 112.92846679687501
+        
+    warning this will flood the node with messages if you arent careful
+    see solution of what it will look like if you launch on a node.     
+*/
+
+new SOS(`rho:io:stdout`) in {
+    SOS!!("Lat: 9.557417184917647 Long: 112.92846679687501")
+}
+
+
+

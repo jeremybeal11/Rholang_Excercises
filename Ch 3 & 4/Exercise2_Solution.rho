@@ -1,0 +1,15 @@
+// edit the code to display all of the messages
+
+new show_num, print(`rho:io:stdout`) in {
+    
+    for(allnum <= @"show_num") {
+        print!(*allnum)
+    } |
+    @"show_num"!(11) |
+    @"show_num"!(8)  |
+    @"show_num"!(3)
+    
+}
+
+
+

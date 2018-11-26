@@ -1,0 +1,29 @@
+/*
+    we are going to take the 
+*/
+
+new ast1, ast2, print(`rho:io:stdout`) in {
+    for (x <- @"ast1"; y <- @"ast2") {
+         
+        if (*x == "stop" and *y == "stop") {
+            print!("whoa whoa whoa abort launch")
+        }
+        else{
+            if (*x =="go" and *y == "stop") {
+                print!("lets check status")
+            }
+            else { 
+            ("we are clear for launch")
+            }
+        }
+         
+    }
+    |
+    @"ast1"!("go")
+    |
+    @"ast2"!("stop")
+}    
+
+/*
+
+*/
